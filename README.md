@@ -5,11 +5,11 @@ Step 1: Install xampp from https://www.apachefriends.org/download.html and paste
 
 Step 2: Set Up the database using phpmyadmin by issuing the following command.
 
-=> Create a database called verify-user and in this database</li></br>
-CREATE DATABASE verify-user</li></br>
+=> Create a database called verify-user and in this database</br>
+``CREATE DATABASE verify-user`` </br>
 
 => Create a users table with attributes as follows: </li></br>
-CREATE TABLE `users` ( </li></br>
+``CREATE TABLE `users` ( </li></br>
  `id` int(11) NOT NULL AUTO_INCREMENT, </li></br>
  `username` varchar(100) NOT NULL, </li></br>
  `email` varchar(100) NOT NULL, </li></br>
@@ -17,11 +17,11 @@ CREATE TABLE `users` ( </li></br>
  `token` varchar(255) DEFAULT NULL, </li></br>
  `password` varchar(255) NOT NULL, </li></br>
  PRIMARY KEY (`id`) </li></br>
-) </li></br>
+) </li></br>``
 
-Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php </li></br>
+Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php </br>
 
-Following Functionalities are implemented:</li></br>
+Following Functionalities are implemented:</br>
 
 1) Register new user on create an account page: http://localhost/zendesk/signup.php : 
 <li>Username must be more than 5 characters and should contain only letter and digit, </li>
