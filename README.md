@@ -10,22 +10,22 @@ CREATE DATABASE verify-user</br>
 
 => Create a users table with attributes as follows: </br>
 CREATE TABLE `users` ( </br>
- `id` int(11) NOT NULL AUTO_INCREMENT,
- `username` varchar(100) NOT NULL,
- `email` varchar(100) NOT NULL,
- `verified` tinyint(1) NOT NULL DEFAULT '0',
- `token` varchar(255) DEFAULT NULL,
- `password` varchar(255) NOT NULL,
- PRIMARY KEY (`id`)
-)
+ `id` int(11) NOT NULL AUTO_INCREMENT, </br>
+ `username` varchar(100) NOT NULL, </br>
+ `email` varchar(100) NOT NULL, </br>
+ `verified` tinyint(1) NOT NULL DEFAULT '0', </br>
+ `token` varchar(255) DEFAULT NULL, </br>
+ `password` varchar(255) NOT NULL, </br>
+ PRIMARY KEY (`id`) </br>
+) </br>
 
-Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php
+Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php </br>
 
-Following Functionalities are implemented:
+Following Functionalities are implemented:</br>
 
-1) Register new user on create an account page: http://localhost/zendesk/signup.php : 
-Username must be more than 5 characters and should contain only letter and digit,
-Email should be valid,
+1) Register new user on create an account page: http://localhost/zendesk/signup.php : </br>
+Username must be more than 5 characters and should contain only letter and digit, </br>
+Email should be valid,</br>
 Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,
 Username and email should be new,
 Password and confirm password should be same,
