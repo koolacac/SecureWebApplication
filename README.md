@@ -26,36 +26,36 @@ Following Functionalities are implemented:</br>
 1) Register new user on create an account page: http://localhost/zendesk/signup.php : </br>
 Username must be more than 5 characters and should contain only letter and digit, </br>
 Email should be valid,</br>
-Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,
-Username and email should be new,
-Password and confirm password should be same,
-All fields are required,
-Input validation to allow only required characters,
-Hashing the password,
-Email verification (In Progress)
+Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</br>
+Username and email should be new,</br>
+Password and confirm password should be same,</br>
+All fields are required,</br>
+Input validation to allow only required characters,</br>
+Hashing the password,</br>
+Email verification (In Progress)</br>
 
-2) Login Page: 
-Input validation,
-SQL Injection prevention using bind parameterized query,
-Hashing the password,
-Setting session cookie with httponly, expiry, secure (if https),
-Recaptcha / MFA (In Progress),
-Logging (In Progress),
+2) Login Page: </br>
+Input validation,</br>
+SQL Injection prevention using bind parameterized query,</br>
+Hashing the password,</br>
+Setting session cookie with httponly, expiry, secure (if https),</br>
+Recaptcha / MFA (In Progress),</br>
+Logging (In Progress),</br>
 
-3) Post Login Page: 
-Change password page (In Progress),
-Logout. 
+3) Post Login Page: </br>
+Change password page (In Progress),</br>
+Logout. </br>
 
-4)  Logout Page: 
-Destroy Session,
-Unset all session cookies,
+4)  Logout Page:</br> 
+Destroy Session,</br>
+Unset all session cookies,</br>
 
-5) Change Password Page  (In Progress)
-All fields required,
-Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,
-Generate CSRF token,
-Validate old password,
-Sanitise current password input,
-Check that the current password is correct,
-Do both new passwords match and does the current password match the user?
-Update database with new password.
+5) Change Password Page  (In Progress)</br>
+All fields required,</br>
+Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</br>
+Generate CSRF token,</br>
+Validate old password,</br>
+Sanitise current password input,</br>
+Check that the current password is correct,</br>
+Do both new passwords match and does the current password match the user?</br>
+Update database with new password.</br>
