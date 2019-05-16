@@ -23,8 +23,8 @@ Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zen
 
 Following Functionalities are implemented:</br>
 
-1) Register new user on create an account page: http://localhost/zendesk/signup.php : </br>
-Username must be more than 5 characters and should contain only letter and digit, </br>
+1) Register new user on create an account page: http://localhost/zendesk/signup.php : </li></br>
+<li>Username must be more than 5 characters and should contain only letter and digit, </br>
 Email should be valid,</br>
 Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</br>
 Username and email should be new,</br>
