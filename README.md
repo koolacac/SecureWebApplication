@@ -5,11 +5,11 @@ Step 1: Install xampp from https://www.apachefriends.org/download.html and paste
 
 Step 2: Set Up the database using phpmyadmin by issuing the following command.
 
-=> Create a database called verify-user and in this database,
-CREATE DATABASE verify-user
+=> Create a database called verify-user and in this database</br>
+CREATE DATABASE verify-user</br>
 
-=> Create a users table with attributes as follows: 
-CREATE TABLE `users` (
+=> Create a users table with attributes as follows: </br>
+CREATE TABLE `users` ( </br>
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(100) NOT NULL,
  `email` varchar(100) NOT NULL,
