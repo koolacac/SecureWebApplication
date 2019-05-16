@@ -1,7 +1,7 @@
 # SecureWebApplication
 Secure Web Application
 
-Step 1: Install xampp from https://www.apachefriends.org/download.html and paste the attached code htdocs directory.
+Step 1: Install xampp from https://www.apachefriends.org/download.html and paste the above zip code from github in htdocs directory.
 
 Step 2: Set Up the database using phpmyadmin by issuing the following command.
 
