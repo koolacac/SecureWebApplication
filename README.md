@@ -32,7 +32,7 @@ Following Functionalities are implemented:</br>
 <li>All fields are required,</li>
 <li>Input validation to allow only required characters,</li>
 <li>Hashing the password,</li>
-<li>Email verification (In Progress)</li>
+<li>Email verification (In Progress)</li></br>
 
 2) Login Page: </br>
 <li>Input validation,</li>
@@ -40,15 +40,15 @@ Following Functionalities are implemented:</br>
 <li>Hashing the password,</li>
 <li>Setting session cookie with httponly, expiry, secure (if https),</li>
 <li>Recaptcha / MFA (In Progress),</li>
-<li>Logging (In Progress),</li>
+<li>Logging (In Progress),</li></br>
 
 3) Post Login Page: </br>
 <li>Change password page (In Progress),</li>
-<li>Logout. </li>
+<li>Logout. </li></br>
 
 4)  Logout Page:</br> 
 <li>Destroy Session,</li>
-<li>Unset all session cookies,</li>
+<li>Unset all session cookies,</li></br>
 
 5) Change Password Page  (In Progress)</br>
 <li>All fields required,</li>
