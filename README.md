@@ -5,57 +5,57 @@ Step 1: Install xampp from https://www.apachefriends.org/download.html and paste
 
 Step 2: Set Up the database using phpmyadmin by issuing the following command.
 
-=> Create a database called verify-user and in this database</br>
-CREATE DATABASE verify-user</br>
+=> Create a database called verify-user and in this database</li></br>
+CREATE DATABASE verify-user</li></br>
 
-=> Create a users table with attributes as follows: </br>
-CREATE TABLE `users` ( </br>
- `id` int(11) NOT NULL AUTO_INCREMENT, </br>
- `username` varchar(100) NOT NULL, </br>
- `email` varchar(100) NOT NULL, </br>
- `verified` tinyint(1) NOT NULL DEFAULT '0', </br>
- `token` varchar(255) DEFAULT NULL, </br>
- `password` varchar(255) NOT NULL, </br>
- PRIMARY KEY (`id`) </br>
-) </br>
+=> Create a users table with attributes as follows: </li></br>
+CREATE TABLE `users` ( </li></br>
+ `id` int(11) NOT NULL AUTO_INCREMENT, </li></br>
+ `username` varchar(100) NOT NULL, </li></br>
+ `email` varchar(100) NOT NULL, </li></br>
+ `verified` tinyint(1) NOT NULL DEFAULT '0', </li></br>
+ `token` varchar(255) DEFAULT NULL, </li></br>
+ `password` varchar(255) NOT NULL, </li></br>
+ PRIMARY KEY (`id`) </li></br>
+) </li></br>
 
-Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php </br>
+Step 3: Start the Apache and Mysql service, Navigate to the http://localhost/zendesk/login.php </li></br>
 
-Following Functionalities are implemented:</br>
+Following Functionalities are implemented:</li></br>
 
-1) Register new user on create an account page: http://localhost/zendesk/signup.php : </li></br>
-<li>Username must be more than 5 characters and should contain only letter and digit, </br>
-Email should be valid,</br>
-Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</br>
-Username and email should be new,</br>
-Password and confirm password should be same,</br>
-All fields are required,</br>
-Input validation to allow only required characters,</br>
-Hashing the password,</br>
-Email verification (In Progress)</br>
+1) Register new user on create an account page: http://localhost/zendesk/signup.php : </br>
+<li>Username must be more than 5 characters and should contain only letter and digit, </li></li></br>
+<li>Email should be valid,</li></br>
+<li>Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</li></br>
+<li>Username and email should be new,</li></br>
+<li>Password and confirm password should be same,</li></br>
+<li>All fields are required,</li></br>
+<li>Input validation to allow only required characters,</li></br>
+<li>Hashing the password,</li></br>
+<li>Email verification (In Progress)</li></br>
 
-2) Login Page: </br>
-Input validation,</br>
-SQL Injection prevention using bind parameterized query,</br>
-Hashing the password,</br>
-Setting session cookie with httponly, expiry, secure (if https),</br>
-Recaptcha / MFA (In Progress),</br>
-Logging (In Progress),</br>
+2) Login Page: </li></br>
+Input validation,</li></br>
+SQL Injection prevention using bind parameterized query,</li></br>
+Hashing the password,</li></br>
+Setting session cookie with httponly, expiry, secure (if https),</li></br>
+Recaptcha / MFA (In Progress),</li></br>
+Logging (In Progress),</li></br>
 
-3) Post Login Page: </br>
-Change password page (In Progress),</br>
-Logout. </br>
+3) Post Login Page: </li></br>
+Change password page (In Progress),</li></br>
+Logout. </li></br>
 
-4)  Logout Page:</br> 
-Destroy Session,</br>
-Unset all session cookies,</br>
+4)  Logout Page:</li></br> 
+Destroy Session,</li></br>
+Unset all session cookies,</li></br>
 
-5) Change Password Page  (In Progress)</br>
-All fields required,</br>
-Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</br>
-Generate CSRF token,</br>
-Validate old password,</br>
-Sanitise current password input,</br>
-Check that the current password is correct,</br>
-Do both new passwords match and does the current password match the user?</br>
-Update database with new password.</br>
+5) Change Password Page  (In Progress)</li></br>
+All fields required,</li></br>
+Password must be at least 8 characters and must contain at least one lower case letter, one upper case letter and one digit,</li></br>
+Generate CSRF token,</li></br>
+Validate old password,</li></br>
+Sanitise current password input,</li></br>
+Check that the current password is correct,</li></br>
+Do both new passwords match and does the current password match the user?</li></br>
+Update database with new password.</li></br>
